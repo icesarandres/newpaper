@@ -5,9 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import {Navbar} from "../navbar/Navbar";
-import {Profile} from "../components/Profile";
+import Profile from "../components/Profile";
 import { Category } from "../components/Category";
 import { Contact } from "../components/Contact";
+import Login from "../components/Login";
+
 
 
 export default function App() {
@@ -20,6 +22,7 @@ export default function App() {
               <Route exact path="/profile" component={Profile}/>
               <Route exact path="/category" component={Category}/>
               <Route exact path="/contact" component={Contact}/>
+              <Route exact path="/login" component={Login}/>
           </Switch>
         </div>
       </Router>
