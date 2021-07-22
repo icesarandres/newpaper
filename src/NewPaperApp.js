@@ -6,6 +6,7 @@ export const NewPaperApp = () => {
   return (
     <div>
       <AppRouter/>
+      
     </div>
   )
 }
