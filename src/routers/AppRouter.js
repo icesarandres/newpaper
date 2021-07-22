@@ -8,7 +8,7 @@ import {Navbar} from "../navbar/Navbar";
 import Profile from "../components/Profile";
 import { Category } from "../components/Category";
 import { Contact } from "../components/Contact";
-import Login from "../components/Login";
+import Login from "../components/login";
 
 
 
