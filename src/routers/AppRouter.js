@@ -9,6 +9,7 @@ import Profile from "../components/Profile";
 import { Category } from "../components/Category";
 import { Contact } from "../components/Contact";
 import Login from  '../components/login';
+import register from '../components/register'
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
               <Route exact path="/category" component={Category}/>
               <Route exact path="/contact" component={Contact}/>
               <Route exact path="/login" component={Login}/>
+              <Route exact path="/register" component={register}/>
           </Switch>
          
         </div>
