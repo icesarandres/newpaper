@@ -43,38 +43,25 @@ export const Navbar = () => {
                                 activeClassName="active"
                                 className="nav-item nav-link"
                                 exact
-                                to="/profile"
+                                to="/aboutus"
                             >
-                                Perfil
+                                Nosotros
                             </NavLink>
 
                             <NavLink
                                 activeClassName="active"
                                 className="nav-item nav-link"
                                 exact
-                                to="/aboutus"
+                                to="/profile"
                             >
-                                Nosotros
+                                Perfil
                             </NavLink>
 
-                            <form class="d-flex">
-                                <button class="btn btn-sm btn-outline-secondary" type="button">
-                                    <NavLink
-                                        activeClassName="active"
-                                        className="nav-item nav-link"
-                                        exact
-                                        to="/profile"
-                                    >
-                                        Inicia Sesion
-                                    </NavLink>
-                                </button>
-                            </form>
                         </ul>
                     </div>
+                    
                 </div>
         </nav>
 
-
-
-            )
+    )
 }
