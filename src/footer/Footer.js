@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import '../index.css'
-export const Navbar = () => {
+export const Footer = () => {
     return (
        
-              <section className=' textoH text-center'>
+              <section className='footer-bg text-center'>
       <div class="container center">
   <div class="row">
     <div class="col-sm">
@@ -15,11 +15,10 @@ export const Navbar = () => {
     <p>El mejor diario del mundo</p>
     <h1  className="textoH">The Medallin Time</h1>
    
-    <br/>
-    <button className="btn-vm" >Ver más</button>   <br/>   <br/>
+
     </div>
-    <div class="col-sm ">
-    <nav className="navbar navbar-expand-sm textoH position-about" >
+    <div class="col-sm">
+    <nav className="navbar navbar-expand-sm textoH" >
     <Link 
                 className="navbar-brand textoH " 
                 to="/"
@@ -50,8 +49,10 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul className=" navbar-nav ml-auto">
+          
+        
+            <div className="navbar-collapse">
+                <div className=" textoH navbar-nav">
                     <NavLink 
                         activeClassName="active"
                         className="textoH nav-item nav-link" 
@@ -60,11 +61,14 @@ export const Navbar = () => {
                     >
                         Perfil
                     </NavLink>
-                </ul>
+                    </div>
             </div>
+   
 
-           <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul className="navbar-nav ml-auto">
+
+              
+            <div className="navbar-collapse">
+                <div className=" textoH navbar-nav">
                     <NavLink 
                         activeClassName="active"
                         className="textoH nav-item nav-link" 
@@ -73,8 +77,9 @@ export const Navbar = () => {
                     >
                         Login
                     </NavLink>
-                </ul>
+                    </div>
             </div>
+       
 
         </nav>
     </div>

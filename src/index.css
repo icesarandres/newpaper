@@ -10,7 +10,9 @@ html{
 }
 
 body {
-  background-color: var(--color-bg);
+  background:url(../src/img/Raster.jpeg)no-repeat;
+  
+  background-size: 100%; 
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -37,7 +39,8 @@ li{
 
 .title-form-lg{
   font-size: 25px;
-  color:blue;
+  color:#232527;
+
   text-align: center;
   margin-top: 5%;
 }
@@ -125,4 +128,31 @@ justify-content: center;
  :hover .link {
    color: navy;
    text-decoration: underline;
+ }
+
+
+ section{
+  background:#c1c4ca;
+  color:#232527;
+
+ }
+.textoH{
+  color:#232527;
+}
+ .btn-vm{
+   border-radius: 50px;
+   background:#47525E;
+   border-color: #47525E;
+   padding: 8px;
+   font-size: 16px;
+   width: 60%;
+ }
+ .position-about{
+  margin-left: 60%;
+  nav-right: auto;
+ }
+
+ .footer-bg{
+   margin-top: 10%;
+ background:  #232527;
  }

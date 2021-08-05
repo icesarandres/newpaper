@@ -1,4 +1,5 @@
 import React from "react";
+import {Header} from '../containers/Header'
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,12 +11,14 @@ import { Category } from "../components/Category";
 import { Contact } from "../components/Contact";
 import Login from  '../components/login';
 import register from '../components/register'
-
+import {Footer} from '../footer/Footer'
 
 export default function App() {
     return (
+      
       <Router>
         <div>
+      
           <Navbar/>
    
           <Switch>
@@ -25,7 +28,7 @@ export default function App() {
               <Route exact path="/login" component={Login}/>
               <Route exact path="/register" component={register}/>
           </Switch>
-         
+         <Footer/>
         </div>
       </Router>
     );
