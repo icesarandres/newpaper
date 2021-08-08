@@ -4,47 +4,45 @@ import '../index.css'
 export const Footer = () => {
     return (
        
-              <section className='footer-bg text-center'>
-      <div class="container center">
-  <div class="row">
-    <div class="col-sm">
-   {/* { <h1 class="text-hide" style="background-image: url('../img/logo'); width: 50px; height: 50px;">Bootstrap</h1>} */}
+              <section className='footer-bg text-center text-light'>
+      <div>
+  <div class="wrap">
+  <div class="logo">
+    <img src={"../img/logo.jpeg"} class="img-thumbnail" alt="..."></img>
     </div>
-    <div class="col-md">
+    <div >
     <br/>
-    <p>El mejor diario del mundo</p>
-    <h1  className="textoH">The Medallin Time</h1>
-   
-
-    </div>
-    <div class="col-sm">
-    <nav className="navbar navbar-expand-sm textoH" >
+    <nav className=" nav-left navbar nav flex-column " >
     <Link 
-                className="navbar-brand textoH " 
+                className=" nav-item navbar-brand  " 
                 to="/"
             >
-                New Paper
+                 Inicio
             </Link>
+          
+      
+      
 
             <div className="navbar-collapse">
-                <div className=" textoH navbar-nav">
+                <div className="  navbar-nav">
 
                     <NavLink 
                         activeClassName="active"
-                        className=" textoH nav-item nav-link " 
+                        className="   nav-item navbar-brand " 
                         exact
                         to="/category"
                     >
-                        Categoria
+                        Categoría
                     </NavLink>
-
+              
+     
                     <NavLink 
                         activeClassName="active"
-                        className=" textoH nav-item nav-link" 
+                        className="  nav-item navbar-brand " 
                         exact
                         to="/contact"
                     >
-                        Contacto
+                    Contacto  
                     </NavLink>
                 </div>
             </div>
@@ -52,15 +50,16 @@ export const Footer = () => {
           
         
             <div className="navbar-collapse">
-                <div className=" textoH navbar-nav">
+                <div className="  navbar-nav">
                     <NavLink 
                         activeClassName="active"
-                        className="textoH nav-item nav-link" 
+                        className=" nav-item navbar-brand " 
                         exact
                         to="/profile"
                     >
-                        Perfil
+                       Perfil
                     </NavLink>
+               
                     </div>
             </div>
    
@@ -68,10 +67,10 @@ export const Footer = () => {
 
               
             <div className="navbar-collapse">
-                <div className=" textoH navbar-nav">
+                <div className=" navbar-nav">
                     <NavLink 
                         activeClassName="active"
-                        className="textoH nav-item nav-link" 
+                        className="nav-item navbar-brand " 
                         exact
                         to="/login"
                     >
@@ -82,7 +81,24 @@ export const Footer = () => {
        
 
         </nav>
+  
+
     </div>
+    <div class="col-sm lft-margin subida">
+        <p>ingresa tu correo para recibir información en tiempo real</p>
+<label>
+    <input className="l-s">
+    </input>
+    <button className="btn-s"> subir</button>
+</label>
+<div class="wrap">
+{/* <i class="fab fa-facebook-f">a</i>
+<i class="fab fa-twitter">a</i>
+<i class="fab fa-youtube">a</i>
+<i class="fab fa-github">a</i>
+<i class="fab fa-instagram">a</i> */}
+</div>
+</div>
   </div>
 </div>
     </section>

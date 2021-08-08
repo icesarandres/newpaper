@@ -2,8 +2,14 @@
 html{
   box-sizing: border-box;
   overflow-x: hidden;
+  margin: auto;
+  padding: auto;
 }
-
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 *,*::before,*::after{
   box-sizing: inherit;
   
@@ -11,9 +17,9 @@ html{
 
 body {
   background:url(../src/img/Raster.jpeg)no-repeat;
-  
+  padding: auto;
   background-size: 100%; 
-  margin: 0;
+  margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -126,7 +132,7 @@ justify-content: center;
  margin-bottom: 5%;
 }
  :hover .link {
-   color: navy;
+   color: rgb(0, 0, 94);
    text-decoration: underline;
  }
 
@@ -155,4 +161,36 @@ justify-content: center;
  .footer-bg{
    margin-top: 10%;
  background:  #232527;
+ color: white;
  }
+
+ .nv-p{
+   left: 20%;
+ }
+ .logo{
+   width: 10%;
+right:50%;
+ }
+
+ .lft-margin{
+   margin-left: 20%;
+ }
+ .nav-left{
+   margin-right: 40%;
+ }
+ .subida{
+  position: relative;
+  top: -200px;
+   left: 15%;
+ }
+
+ .btn-s{
+   border-radius: 25%;
+   padding: 3px;
+   margin-left: 6px;
+ }
+ .l-s{
+  border-radius: 15%;
+   padding: auto;
+ }
+ 
