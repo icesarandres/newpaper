@@ -1,5 +1,5 @@
 import React from "react";
-import {Header} from '../containers/Header'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,7 +23,7 @@ export default function App() {
     return (
       
       <Router>
-        <div>
+        <div className="border-enrutamientos">
       
           <Navbar/>
    
