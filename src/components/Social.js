@@ -1,7 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react'
+import {CardGroup, ListGroup } from "react-bootstrap";
 
-export const Social = () => {
+export const Social = (props) => {
 
     const [todo, setTodo] = React.useState([])
 
@@ -21,17 +22,21 @@ export const Social = () => {
             <div class="container center">
                 <div class="row">
                     <ul>
-                        {
-                            todo.map(item => (
 
-                                <li key={item.id}> {item.title} - {item.author}</li>
-                            ))
-                        }
+                             <CardGroup> <h1>Api</h1>
+                             {
+                                  todo.map(item => (
+
+                                    <li > {item.title} </li>
+                                ))
+                            }
+
+                             </CardGroup>
+                           
                     </ul>
             
                 </div>
             </div>
-            
 
         </div>
     )
